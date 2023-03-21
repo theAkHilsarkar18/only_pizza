@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:only_pizza/screens/homescreen/provider/homeprovider.dart';
 import 'package:provider/provider.dart';
 
+import '../../openscreen/provider/openprovider.dart';
+
 class Homescreen extends StatefulWidget {
   const Homescreen({Key? key}) : super(key: key);
 
@@ -69,7 +71,8 @@ class _HomescreenState extends State<Homescreen> {
                           crossAxisCount: 2, childAspectRatio: 1),
                       itemBuilder: (context, index) => InkWell(
                         onTap: () {
-                          Navigator.pushNamed(context, 'open',arguments: index);
+                          Provider.of<Openprovider>(context,listen: false).initURLmethod(index);
+                          Navigator.pushNamed(context, 'open');
                         },
                       child: logoBoxUI(homeprovider!.logoImgList[index],homeprovider!.pizzaName[index])),
                       shrinkWrap: true,

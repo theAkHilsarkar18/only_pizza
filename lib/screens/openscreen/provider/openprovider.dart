@@ -5,7 +5,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 class Openprovider extends ChangeNotifier
 {
   List webLinkList = [
-    "https://pizzaonline.dominos.co.in/"
+    "https://www.dominos.co.in/",
     "https://lapinozpizza.in/",
     "https://martinozpizza.com/",
     "https://www.pizzahut.co.in/",

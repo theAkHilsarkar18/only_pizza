@@ -12,12 +12,12 @@ class Openscreen extends StatefulWidget {
 
 class _OpenscreenState extends State<Openscreen> {
   @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    int ind = ModalRoute.of(context)!.settings.arguments as int;
-    Provider.of<Openprovider>(context, listen: false).initURLmethod(ind);
-  }
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+  //   int ind = ModalRoute.of(context)!.settings.arguments as int;
+  //   Provider.of<Openprovider>(context, listen: false).initURLmethod(ind);
+  // }
 
   @override
   Widget build(BuildContext context) {
